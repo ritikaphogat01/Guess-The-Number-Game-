@@ -40,6 +40,7 @@ checkbutn.addEventListener("click", function () {
       } else if (userguessnumber === randomnumber) {
         outputmessage.textContent = "🥳🎉 Correct";
         document.querySelector("body").style.backgroundColor = "green";
+        GuessNumber.textContent = randomnumber
 
         if (score > highscore) {
           highscore = score;
